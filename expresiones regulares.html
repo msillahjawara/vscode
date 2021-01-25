@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<script type="text/javascript">
+			var res=false
+			var enteros=/^[+-]?[0-9]{1,}$/
+			var cp=/^\d{5}$/
+			var x= "";
+			var fechas=/^(([0-9]{1,2}[-/]){2})+\d{4}$/
+			var reales=/^[+-]?\d+(([.,]\d)?)+$/
+		function expresiones(){
+			x= document.getElementById("expre7").value
+			if (enteros.test(x)) {
+				res=true
+			}else if (cp.test(x)) {
+				res=true
+			}
+			document.write("el resulado de "+x+" es "+res)
+		}
+	</script>
+</head>
+<body>
+	<h1>Ejercicio de despliegue mahamadou</h1>
+	<form method="get">
+		<input type="text" id="expre7">
+		<input type="submit" name="" value="submit" onclick="expresiones()">
+	</form>
+
+</body>
+</html>
